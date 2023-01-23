@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class register extends StatelessWidget {
-  const register({super.key});
+class login extends StatelessWidget {
+  const login({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class register extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () {},
                               child: Text(
-                                "Register",
+                                "Login",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),

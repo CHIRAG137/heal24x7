@@ -17,7 +17,7 @@ class home extends StatelessWidget {
               Image.asset("asset/image.png"),
               Text("What do you need?"),
               GridView.count(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(10),
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
                   crossAxisCount: 2,

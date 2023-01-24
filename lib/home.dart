@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class home extends StatelessWidget {
@@ -11,32 +13,99 @@ class home extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.red.shade400,
         ),
-        body: Container(
+        body: SingleChildScrollView(
+          padding: EdgeInsets.only(top: 50),
           child: Column(
             children: [
-              Image.asset("asset/image.png"),
-              Text("What do you need?"),
+              Image.asset(
+                "asset/image.png",
+                height: 200,
+                width: 200,
+              ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 20),
+                child: Text("What do you need?",
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              ),
               GridView.count(
                   padding: EdgeInsets.all(10),
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
                   crossAxisCount: 2,
+                  shrinkWrap: true,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(8),
-                      color: Colors.teal[100],
-                      child: Text("He'd have you all unravel at the"),
-                    ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.teal.shade300,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 60),
+                          child: Column(
+                            children: [
+                              Icon(Icons.health_and_safety),
+                              Text(
+                                "Medicine Record",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 18),
+                              )
+                            ],
+                          ),
+                        )),
                     Container(
-                      padding: EdgeInsets.all(8),
-                      color: Colors.teal[200],
-                      child: Text('Heed not the rabble'),
-                    ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.teal.shade300,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 60),
+                          child: Column(
+                            children: [
+                              Icon(Icons.document_scanner),
+                              Text(
+                                "Medical Profile",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 18),
+                              )
+                            ],
+                          ),
+                        )),
                     Container(
-                      padding: EdgeInsets.all(8),
-                      color: Colors.teal[300],
-                      child: Text('Sound of screams but the'),
-                    ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.teal.shade300,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 60),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Test Results",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 18),
+                              )
+                            ],
+                          ),
+                        )),
+                    Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.teal.shade300,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 60),
+                          child: Column(
+                            children: [
+                              Icon(Icons.message),
+                              Text(
+                                "Doctor's Messages",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 18),
+                              )
+                            ],
+                          ),
+                        )),
                   ]),
             ],
           ),

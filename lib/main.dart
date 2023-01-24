@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:heal24x7/profile.dart';
 import 'home.dart';
 import 'login.dart';
 import 'register.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:home(),
+      home:profile(),
       debugShowCheckedModeBanner: false,
     );
   }

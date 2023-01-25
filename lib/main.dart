@@ -6,8 +6,9 @@ import 'package:heal24x7/profile.dart';
 import 'home.dart';
 import 'login.dart';
 import 'register.dart';
+import 'splashScreen.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:profile(),
+      home: home(),
       debugShowCheckedModeBanner: false,
     );
   }

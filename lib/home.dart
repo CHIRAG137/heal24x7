@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class home extends StatelessWidget {
   const home({super.key});
@@ -14,19 +15,19 @@ class home extends StatelessWidget {
           backgroundColor: Colors.red.shade400,
         ),
         body: SingleChildScrollView(
-          padding: EdgeInsets.only(top: 50),
+          padding: EdgeInsets.only(top: 40),
           child: Column(
             children: [
-              Image.asset(
-                "asset/image.png",
+              SvgPicture.asset(
+                "asset/asset3.svg",
                 height: 200,
                 width: 200,
               ),
               Padding(
-                padding: EdgeInsets.only(bottom: 20),
+                padding: EdgeInsets.only(bottom: 20,top: 20),
                 child: Text("What do you need?",
                     style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                        TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
               ),
               GridView.count(
                   padding: EdgeInsets.all(10),

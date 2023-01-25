@@ -10,16 +10,22 @@ class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(top: 110, left: 45),
+          padding: EdgeInsets.only(left: 45, top: 5),
           child: Column(
             children: [
+              Image.asset(
+                "asset/asset2.gif",
+                height: 200,
+                width: 200,
+              ),
               Text(
                 "Welcome to heal24x7",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
               ),
-              SvgPicture.asset("asset/register.svg", height: 250, width: 250),
+              SvgPicture.asset("asset/register.svg", height: 200, width: 200),
               Container(
                 width: 300,
                 child: Column(

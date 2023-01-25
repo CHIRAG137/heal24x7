@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, unnecessary_new
 
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:heal24x7/login.dart';
+import 'package:heal24x7/register.dart';
 
 class register extends StatelessWidget {
   const register({super.key});
@@ -12,16 +11,22 @@ class register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(top: 110, left: 45),
+          padding: EdgeInsets.only(left: 45, top: 5),
           child: Column(
             children: [
+              Image.asset(
+                "asset/asset2.gif",
+                height: 200,
+                width: 200,
+              ),
               Text(
                 "Welcome to heal24x7",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
               ),
-              SvgPicture.asset("asset/register.svg", height: 250, width: 250),
+              SvgPicture.asset("asset/register.svg", height: 200, width: 200),
               Container(
                 width: 300,
                 child: Column(
@@ -117,9 +122,9 @@ class register extends StatelessWidget {
                           )),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 73, top: 30),
+                      padding: EdgeInsets.only(left: 75, top: 30),
                       child: Row(children: [
-                        Text("Already a member? "),
+                        Text("Already a Member? "),
                         GestureDetector(
                           onTap: () {
                             Navigator.push(

@@ -24,7 +24,7 @@ class _MyAppState extends State<splashScreen> {
   @override
   Widget build(BuildContext context) {
     timer = Timer(
-      Duration(seconds: 3),
+      Duration(seconds: 4),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
